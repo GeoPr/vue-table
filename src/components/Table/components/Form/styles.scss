@@ -1,0 +1,40 @@
+.form {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    &__fields {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__field {
+        flex: 1;
+        height: 40px;
+        padding: 0 20px;
+        background: #333;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        transition: all 0.5s ease 0s;
+        font-size: 1.3rem;
+
+        &_invalid {
+            border-color: red;
+        }
+    }
+
+    &__button {
+        justify-self: start;
+        height: 40px;
+        padding: 0 30px;
+        background: deepskyblue;
+        border-radius: 5px;
+        font-size: 1.5rem;
+
+        &_show {
+            margin-bottom: 30px;
+            background: darkcyan;
+        }
+    }
+}

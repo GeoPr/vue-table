@@ -1,0 +1,21 @@
+.table {
+    &__row {
+        display: grid;
+        grid-template: 50px / repeat(5, 1fr);
+    }
+
+    &__cell {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        border: 1px solid gray;
+        cursor: pointer;
+        font-size: 15px;
+
+        &_header {
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: capitalize;
+        }
+    }
+}
